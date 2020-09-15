@@ -4,10 +4,115 @@ body{
 	cursor: url('https://electerious.com/assets/images/cursor.svg') 3 3,auto;
 }
 html{
-	overflow: hidden;
+	overflow-x: hidden;
 }
 #skills{
 	background-color: #252734 !important;
+	padding-bottom: 20px;
+}
+#p-1 div h3{
+	color:aqua;
+}
+#p-2 div h3{
+	color:#ff04f7;
+}
+#p-3 div h3{
+	color:#00ff43;
+}
+#p-4 div h3{
+	color:#ff6666;
+}
+#p-2,#p-3,#p-4{
+	padding-top: 60px;
+}
+#p-2 div a{
+	border-color: #ff04f7 !important;
+	color: #ff04f7 !important;
+}
+#p-2 div a:hover{
+	background-color:#ff04f7 !important;
+	color: white !important;
+}
+#p-3 div a{
+	border-color: #00ff43 !important;
+	color: #00ff43 !important;
+}
+#p-3 div a:hover{
+	background-color:#00ff43 !important;
+	color: white !important;
+}
+#p-4 div a{
+	border-color: #ff6666 !important;
+	color: #ff6666 !important;
+}
+#p-4 div a:hover{
+	background-color:#ff6666 !important;
+	color: white !important;
+}
+.p-img{
+	box-shadow: 0 4px 80px #070509;
+	transition: 0.5s ease;
+	z-index: 2;
+	
+	overflow: hidden;
+	position: relative;
+}
+.p-img img{
+	transition: 0.5s ease;
+
+}
+#p-1 div:nth-child(2):hover{
+	box-shadow: 0 4px 80px aqua;
+
+}
+#p-2 div:nth-child(1):hover{
+	box-shadow: 0 4px 80px #ff04f7;
+
+}
+#p-3 div:nth-child(2):hover{
+	box-shadow: 0 4px 80px #00ff43;
+
+}
+#p-4 div:nth-child(1):hover{
+	box-shadow: 0 4px 80px #ff6666;
+
+}
+.img-btn{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	transition: 0.5s ease;
+	opacity: 0;
+	z-index: 2;
+}
+#p-1 div:nth-child(2):hover .img-btn{
+	opacity: 1;
+}
+#p-1 div:nth-child(2):hover img{
+	transform: scale(1.1);
+	
+}
+#p-2 div:nth-child(1):hover .img-btn{
+	opacity: 1;
+}
+#p-2 div:nth-child(1):hover img{
+	transform: scale(1.1);
+	
+}
+#p-3 div:nth-child(2):hover .img-btn{
+	opacity: 1;
+}
+#p-3 div:nth-child(2):hover img{
+	transform: scale(1.1);
+	
+}
+#p-4 div:nth-child(1):hover .img-btn{
+	opacity: 1;
+}
+#p-4 div:nth-child(1):hover img{
+	transform: scale(1.1);
+	
 }
 #skill-left{
 	color:#FFC25C !important;
@@ -97,6 +202,11 @@ svg circle:nth-child(2){
 #sk-head{
 	    font-family: Source Sans Pro;
 	    font-weight: 500;
+	    color:#FFC25C !important;
+}
+.p-text{
+	padding-top: 20px;
+	padding-left: 25px;
 }
 .percent .number{
 	position: absolute;
@@ -359,6 +469,12 @@ img{
 	.card-head{
 		position: relative;
 		font-size: 3rem;
+	}
+	#p-detail .d-flex {
+		display: block !important;
+	}
+	.p-img{
+		padding-top: 10px;
 	}
 	.collapse:not(.show) {
 		display: none !important;
