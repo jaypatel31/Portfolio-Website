@@ -31,8 +31,9 @@
 		<div class=cursour>
 		
 	</div>
+	
 		<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-  <a class="navbar-brand" href="#"><span class="text_1">Web Dev</span><span class="text_2">Web Designer</span></a>
+  <a class="navbar-brand"  href="#"><span class="text_1">Web Dev</span><span class="text_2">Web Designer</span></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -50,6 +51,9 @@
     </ul>
   </div>
 </nav>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" id="onscrl">
+		<a class="navbar-brand" id="name-img" href="#"><img src="Images/jay5.png" alt="name"></a>
+	</nav>
 	<div  class="container">
 		<div class="card" id="card">
 			<div class="card-head">
@@ -319,6 +323,34 @@
 		</div>
   	</div>
   </div>
+  <div id="footer">
+  	<div class="container text-white">
+  		<div class="pt-3">
+  			<div id="f-logo" class="text-center">
+  				<div class="percent">
+	  				<svg>
+	  					<circle cx="70" cy="70" r="35"></circle>
+	  					<circle cx="70" cy="70" r="35"></circle>
+	  				</svg>
+	  				<div class="number">
+	  					<h2>JP</h2>
+	  				</div>
+  				</div>
+  			</div>
+  			<div class="row border pb-3 border-top-0 border-left-0 border-right-0">
+  				<div class="col-md-8">
+  					<div class="display-4">Like My Works?</div>
+  					<div class="display-4" id="sm-grey">Let's Work Togethor.</div>
+  					<a href="#" class="badge badge-pill badge-info">Get in Touch</a>
+  				</div>
+  				<div class="col-md-4">
+  					<div class="pt-3"><a href="#"><i class="fab fa-github fa-4x"></i></a><a href="#"><i class="fab fa-instagram fa-4x pl-3"></i></a></div>
+  				</div>
+  			</div>
+  			<div class="text-right pt-2">Made with <i class="fas fa-heart" style="color:red"></i> by Jay Patel</div>
+  		</div>
+  	</div>
+  </div>
 </body>
 <script>
 	
@@ -333,6 +365,14 @@
 	window.onbeforeunload = function(event) {
 		document.documentElement.scrollTop=0;
 	};
+	window.onscroll = function(){
+		if(document.documentElement.scrollTop>0){
+			document.getElementById('onscrl').style.display = "block";
+		}
+		else{
+			document.getElementById('onscrl').style.display = "none";
+		}
+	}
 	$("body").mousemove(function(e) {
 		var a = document.getElementsByClassName('cursour')[0];
     	a.style = "--x:"+e.pageX+"px;"+"--y:"+e.pageY+"px;"+"--size: 42px;"+"--scale: 1;"+"--duration: 0s;";

@@ -6,6 +6,18 @@ body{
 html{
 	overflow-x: hidden;
 }
+#onscrl{
+	display: none;
+	position: fixed !important;
+	z-index: 500;
+}
+#name-img{
+	position: relative;
+	width: 25%;
+}
+#name-img{
+
+}
 #skills,#achievement{
 	background-color: #252734 !important;
 	padding-bottom: 20px;
@@ -234,6 +246,47 @@ svg circle:nth-child(2){
 .p-text{
 	padding-top: 20px;
 	padding-left: 25px;
+}
+#footer{
+	background-color: #111111;
+}
+#footer div div div{
+	z-index:5;
+}
+#footer .row div:nth-child(2) a{
+	color:white !important;
+	transition: 0.5s ease;
+}
+#footer .row div:nth-child(2) a:hover{
+	color:#FFC25C !important;
+}
+#f-logo{
+	color:#FFC25C;
+	font-family: sofia;
+	padding-bottom: 20px;
+	position: relative;
+}
+#sm-grey{
+	    font-size: 2.5rem;
+    color: darkgray;
+}
+#f-logo div{
+	box-shadow: none;
+    background-color: transparent;
+    margin: auto;
+}
+.badge{
+	margin-top: 20px;
+	font-size: 30px;
+}
+#f-logo div div h2{
+	transform: rotate(-30deg);
+    color: white !important;
+    font-size: 35px;
+}
+#f-logo div svg circle{
+	stroke: #FFC25C;
+	stroke-width:7px;
 }
 .percent .number{
 	position: absolute;
@@ -492,6 +545,7 @@ img{
 	}
 	.ac-card div div:nth-child(1){
 		width: 100%;
+		text-align: center !important;
 	}
 	.ac-card div div{
 		float: none !important;
