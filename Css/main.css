@@ -6,6 +6,39 @@ body{
 html{
 	overflow-x: hidden;
 }
+#top{
+	position: relative;
+}
+#back2Top{
+	width: 70px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 50px;
+    right: -70px;
+    background-color: #FFC25C;
+    color: #555;
+    text-align: center;
+    font-size: 30px;
+    border-radius:25px;
+	transition:0.5s ease;
+    text-decoration: none;
+}
+#back2Top:hover {
+    background-color: #FFC25C;
+    
+    padding-left: 20px;
+}
+#back2Top i{
+	transform: rotate(90deg);
+}
 #onscrl{
 	display: none;
 	position: fixed !important;
@@ -205,6 +238,7 @@ svg circle:nth-child(2){
 	position: relative;
 	width: 90vw;
 	display: flex;
+	z-index:4;
 	justify-content: space-around;
 }
 .s-container .card{
@@ -252,6 +286,7 @@ svg circle:nth-child(2){
 }
 #footer div div div{
 	z-index:5;
+	border-color: darkgray !important;
 }
 #footer .row div:nth-child(2) a{
 	color:white !important;
@@ -537,6 +572,9 @@ img{
 	.s-container{
 		width: 80vw;
 	}
+	#footer div div div .ic i{
+		font-size: 3rem;
+	}
 	.s-container .card{
 		width: 200px;
 	}
@@ -628,6 +666,9 @@ img{
 @media only screen and (max-width:400px){
 	.navbar-brand{
 		font-size: 2.5rem;
+	}
+	#name-img {
+		width: 55%;
 	}
 	#card{
 		width: 90%;
